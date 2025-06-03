@@ -706,20 +706,19 @@ section {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(5px);
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.6);
 }
+
 .modal-content {
   background-color: #fff;
-  margin: 60px auto;
+  margin: 10% auto;
   padding: 20px;
   border-radius: 12px;
-  width: 90%;
   max-width: 600px;
+  text-align: center;
   position: relative;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
-  animation: slideUp 0.3s ease-out;
+  font-weight: bold;
 }
 
 .modal-content img {
@@ -730,29 +729,20 @@ section {
   border-radius: 8px;
 }
 
-.modal-content h3 {
-  margin-top: 0;
-  padding-right: 40px; /* to avoid overlapping close button */
-  font-size: 22px;
-  color: #333;
-}
-
 .close-btn {
   position: absolute;
-  top: 12px;
-  right: 18px;
+  top: 10px;
+  right: 20px;
   font-size: 28px;
   font-weight: bold;
   color: #333;
-  background: none;
-  border: none;
   cursor: pointer;
-  z-index: 2;
 }
 
 .close-btn:hover {
   color: #6a11cb;
 }
+
 
 #modalVideoLink,
 #modalDownloadLink {
@@ -772,42 +762,6 @@ section {
 #modalDownloadLink {
   color: white;
   background-color: #28a745;
-}
-
-/* Animation */
-@keyframes slideUp {
-  from {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* Responsive Design */
-@media (max-width: 480px) {
-  .modal-content {
-    width: 95%;
-    margin: 30px auto;
-    padding: 15px;
-  }
-
-  .close-btn {
-    font-size: 24px;
-    top: 10px;
-    right: 15px;
-  }
-
-  .modal-content h3 {
-    font-size: 18px;
-    padding-right: 45px;
-  }
-
-  .modal-content p {
-    font-size: 14px;
-  }
 }
 
 /* ===== Footer ===== */
