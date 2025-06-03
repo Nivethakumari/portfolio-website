@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nivethakumari Rajnikandh | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <a href="#hero" class="logo-link">
+    <div class="logo">Nivethakumari Rajnikandh</div>
+  </a>
+
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button id="darkToggle" class="dark-toggle" aria-label="Toggle Dark Mode">🌙</button>
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+  <!-- ✅ HERO SECTION -->
+  <header class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="Intro">
+          <p>Hi, I'm Nivethakumari Rajnikandh</p>
+        </div>
+        <h1>I’M <span class="typed-text" id="typing"></span></h1>
+       <div class="glass-quote">
+  <span class="quote-mark">“</span>
+  <p>
+    A curious mind with a love for smart systems, I bring together tech and strategy to create value beyond code.
+    Whether it's predicting traffic, enhancing security, or building intuitive web solutions — I aim to bridge the gap between data, design, and decision-making.
+  </p>
+  <span class="quote-mark">”</span>
+</div>
+
+<div class="social-icons">
+  <div class="icon">
+    <a href="https://www.linkedin.com/in/nivethakumari-r/" target="_blank">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+  <div class="icon">
+    <a href="https://github.com/Nivethakumari" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+</div>
+      </div>
+      <div class="hero-img">
+        <img src="assets/profile.jpg" alt="Profile Picture" class="profile-pic" />
+      </div>
+    </div>
+  </header>
+
+<!-- ✅ ABOUT SECTION -->
+<section id="about" data-aos="fade-up">
+  <h2>About Me</h2>
+  <p>
+    I am a motivated learner at the beginning of my journey in Data Science and Web Development. With a strong interest in intelligent systems and data-driven solutions, I enjoy exploring how technology can solve real-world problems. Whether it's analyzing patterns in data, experimenting with predictive models, or developing user-friendly websites, I aim to combine logic, creativity, and purpose as I continue to grow and gain experience in this exciting field.
+  </p>
+
+  <!-- Resume Download Button (Now inside About section) -->
+  <div class="resume-download">
+    <a href="assets/Nivethakumari Rajnikandh Resume.pdf" download class="download-btn">Download Resume</a>
+  </div>
+</section>
+
+
+  <section id="skills" data-aos="fade-up">
+  <h2>Skills</h2>
+  <div class="skill-categories">
+    <div class="skill-box" onclick="showSkills('programming')">Programming Languages</div>
+    <div class="skill-box" onclick="showSkills('tools')">Tools & Frameworks</div>
+    <div class="skill-box" onclick="showSkills('web')">Soft Skills</div>
+    <div class="skill-box" onclick="showSkills('ml')">Languages</div>
+  </div>
+
+  <div class="skills-display" id="skills-display">
+    <!-- Skills will appear here -->
+  </div>
+</section>
+
+<section id="projects" data-aos="fade-up">
+  <h2 class="section-title">Projects</h2>
+  <div class="project-grid">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="image-container">
+        <img src="assets/temp.png" alt="Temperature Converter">
+      </div>
+      <div class="project-body">
+        <div class="overlay"></div>
+        <h3>Temperature Converter</h3>
+        <p class="description">
+          A simple and responsive web app that converts temperatures between Celsius, Fahrenheit, and Kelvin using HTML, CSS, and JavaScript.
+        </p>
+        <div class="code-links">
+          <a href="https://drive.google.com/file/d/1K52qrb1JzBLINUDhx99oRttVTnKBBVuy/view?usp=sharing" target="_blank">Video</a>
+          <a href="https://nivethakumari.github.io/Temp/c%20to%20f.html" target="_blank">Live Demo</a>
+          <a href="https://github.com/Nivethakumari/Temp" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="image-container">
+        <img src="assets/os.png" alt="Online Voting Platform">
+      </div>
+      <div class="project-body">
+        <div class="overlay"></div>
+        <h3>Online Voting Platform - Java AWT</h3>
+        <p class="description">
+          An interactive desktop application for secure online voting, developed using Java AWT and Swing for the user interface.
+        </p>
+        <div class="code-links">
+          <a href="https://github.com/Nivethakumari/Java-Voting" target="_blank">GitHub</a>
+          <a href="https://drive.google.com/file/d/1nKHxbmMOMxzCbUQAUeYJTzLjS2PV-1Ej/view?usp=sharing" target="_blank">Video</a>
+          <a href="assets/Java Project.pdf" download>Download PPT</a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="image-container">
+        <img src="assets/traffic.png" alt="Traffic Predictor">
+      </div>
+      <div class="project-body">
+        <div class="overlay"></div>
+        <h3>Traffic Predictor</h3>
+        <p class="description">
+          A real-time traffic level prediction system using Streamlit and XGBoost, trained on engineered traffic data features.
+        </p>
+        <div class="code-links">
+          <a href="https://www.linkedin.com/posts/nivethakumari-r_machinelearning-trafficprediction-xgboost-activity-7325576303154266112-TkPU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD3PYf0Bsnm0_uAmJ7tNBM0TlPu0UUPsDEQ" target="_blank">Linkedin Post</a>
+          <a href="https://traffic-prediction-inqjsuhpyhewvcxenffsey.streamlit.app/" target="_blank">Live Demo</a>
+          <a href="https://github.com/Nivethakumari/traffic-prediction" target="_blank">GitHub</a>
+          <a href="https://colab.research.google.com/drive/1jMTgdGOo6FP9RajObDhhrpOkDG8b_GcY?usp=sharing" target="_blank">Colab</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- ✅ CERTIFICATES -->
+  <section id="certificates" data-aos="fade-up">
+    <h2 class="section-title">Certificates</h2>
+
+    <!-- NPTEL Certificates -->
+    <div class="cert-category">
+      <h3 class="category-title">NPTEL Certificates</h3>
+      <div class="cert-grid">
+        <div class="cert-item"><img src="assets/certificate1.jpg" alt="Operating Systems"><div class="overlay">Operating Systems</div></div>
+        <div class="cert-item"><img src="assets/cert3.jpg" alt="Fundamental Algorithms"><div class="overlay">Fundamental Algorithms : Design and Analysis</div></div>
+        <div class="cert-item"><img src="assets/cert4.jpg" alt="Demystifying Networks"><div class="overlay">Demystifying Networks</div></div>
+        <div class="cert-item"><img src="assets/cert2.jpg" alt="Data Mining"><div class="overlay">Data Mining</div></div>
+        <div class="cert-item"><img src="assets/cert5.jpg" alt="Software Testing"><div class="overlay">Software Testing</div></div>
+      </div>
+    </div>
+
+    <!-- Virtual Internships -->
+    <div class="cert-category">
+      <h3 class="category-title">Virtual Internships</h3>
+      <div class="cert-grid">
+        <div class="cert-item"><img src="assets/aws.jpg" alt="AWS"><div class="overlay">AWS Data Engineering - AICTE</div></div>
+        <div class="cert-item"><img src="assets/Google.jpg" alt="Google"><div class="overlay">Google Generative AI - AICTE</div></div>
+        <div class="cert-item"><img src="assets/Prodigy.jpg" alt="Prodigy"><div class="overlay">Data Science Internship</div></div>
+      </div>
+    </div>
+
+    <!-- Participation Certificates -->
+    <div class="cert-category">
+      <h3 class="category-title">Participation Certificates</h3>
+      <div class="cert-grid">
+        <div class="cert-item"><img src="assets/Part4.jpg" alt="Innovation"><div class="overlay">Innovation Event</div></div>
+        <div class="cert-item"><img src="assets/Part2.jpg" alt="Trading"><div class="overlay">Trading Titans</div></div>
+        <div class="cert-item"><img src="assets/Part3.jpg" alt="Hackathon"><div class="overlay">SG Internal Hackathon</div></div>
+        <div class="cert-item"><img src="assets/Part1.jpg" alt="Cyber Security"><div class="overlay">Cyber Security Workshop</div></div>
+      </div>
+    </div>
+
+     <!-- Extra Activities -->
+  <div class="cert-category">
+    <h3 class="category-title">Extra Activities</h3>
+    <div class="cert-grid">
+      <div class="cert-item"><img src="assets/Thermo.png" alt="ThermoElectric Mobile Charger Project"><div class="overlay">ThermoElectric Mobile Charger Project</div></div>
+      <div class="cert-item"><img src="assets/Kaveri.png" alt="Community Connect Internship"><div class="overlay">Community Connect Internship</div></div>
+    </div>
+  </div>
+</section>
+
+ <!-- Certificate Detail Modal -->
+<div id="certModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3 id="modalTitle"></h3>
+    <img id="modalImage" src="" alt="" />
+    <p id="modalDescription"></p>
+    <a id="modalVideoLink" href="#" target="_blank" style="display:none; font-weight: bold;">▶️ Watch Video</a>
+    <a id="modalDownloadLink" href="#" download class="download-btn" style="display: none;">⬇️ Download File</a>
+
+  </div>
+</div>
+
+
+<!-- ✅ CONTACT -->
+<section id="contact" data-aos="fade-up">
+  <h2>Drop me a Message</h2>
+  <p>Looking forward to addressing your queries.</p>
+
+  <form action="https://formsubmit.co/nivethakumari.rajnikandh@gmail.com" method="POST" class="contact-form" onsubmit="return validateCaptcha()">
+    <!-- Optional customization -->
+    <input type="hidden" name="_subject" value="New Contact Message!">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email address" required>
+    <input type="text" name="subject" placeholder="Subject" required>
+    <textarea name="message" rows="5" placeholder="Your message..." required></textarea>
+
+    <!-- Strong CAPTCHA -->
+    <div class="captcha">
+      <label id="captcha-question"></label>
+      <input type="text" id="captcha-answer" placeholder="Answer" required>
+    </div>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+  <!-- ✅ FOOTER -->
+  <footer>
+    Created by Nivethakumari Rajnikandh © 2025
+  </footer>
+
+  <!-- ✅ SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+ <script>
+    AOS.init();
+  let typed = new Typed("#typing", {
+  strings: ["a Learner", "an Explorer","a Striver"],
+  typeSpeed: 70,
+  backSpeed: 40,
+  loop: true,
+    });
+  </script>
+
+  <script>
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+});
+</script>
+
+  <script>
+  let num1, num2, correctAnswer;
+
+  function generateCaptcha() {
+    num1 = Math.floor(Math.random() * 10) + 1;
+    num2 = Math.floor(Math.random() * 10) + 1;
+    correctAnswer = num1 + num2;
+    document.getElementById('captcha-question').textContent = `What is ${num1} + ${num2}?`;
+  }
+
+  function validateCaptcha() {
+    const userAnswer = parseInt(document.getElementById('captcha-answer').value);
+    if (userAnswer !== correctAnswer) {
+      alert("Incorrect CAPTCHA answer. Please try again.");
+      generateCaptcha(); // regenerate new question
+      return false; // prevent form submission
+    }
+    return true; // CAPTCHA correct
+  }
+  // Initialize on page load
+  window.onload = generateCaptcha;
+</script>
+
+<script>
+  document.querySelectorAll('.cert-item').forEach(item => {
+    item.addEventListener('click', function () {
+      const title = this.querySelector('.overlay').innerText;
+      const modal = document.getElementById('certModal');
+      const modalTitle = document.getElementById('modalTitle');
+      const modalImage = document.getElementById('modalImage');
+      const modalDescription = document.getElementById('modalDescription');
+      const modalVideoLink = document.getElementById('modalVideoLink');
+      const modalDownloadLink = document.getElementById('modalDownloadLink');
+
+      const cert = certDetails[title];
+
+      modalTitle.innerText = title;
+      modalImage.src = this.querySelector('img').src;
+      modalDescription.innerText = cert.description;
+
+      // Show or hide video link
+      if (cert.videoURL) {
+        modalVideoLink.href = cert.videoURL;
+        modalVideoLink.innerText = cert.videoLabel || "▶️ Watch Video";
+        modalVideoLink.style.display = "inline-block";
+      } else {
+        modalVideoLink.style.display = "none";
+      }
+
+      // Show or hide download link
+      if (cert.downloadURL) {
+        modalDownloadLink.href = cert.downloadURL;
+        modalDownloadLink.download = ""; // triggers download
+        modalDownloadLink.innerText = cert.downloadLabel || "⬇️ Download File";
+        modalDownloadLink.style.display = "inline-block";
+      } else {
+        modalDownloadLink.style.display = "none";
+      }
+
+      modal.style.display = "block";
+    });
+  });
+
+  document.querySelector('.close-btn').addEventListener('click', function () {
+    document.getElementById('certModal').style.display = 'none';
+  });
+</script>
+
+<script>
+  // Certificate details data - you can customize this for each certificate
+const certDetails = {
+  "Operating Systems": {
+    description: "An 8-week course by Prof. Chrestino Reberio (IIT Madras) covering operating system fundamentals like scheduling and deadlocks, essential for understanding system-level concepts in cybersecurity.",
+  },
+  "Fundamental Algorithms : Design and Analysis": {
+    description: "A 4-week course by Prof. Sourav Mukhopadhyay (IIT Kharagpur) covering core algorithmic concepts such as sorting, trees, and graphs, providing a strong foundation in computer science.",
+  },
+  "Demystifying Networks": {
+    description: "A 4-week course by Prof. Sridhar Iyer and Prof. Ashutosh Raina (IIT Bombay) exploring core networking concepts and applications. Achieved Topper status, deepening my passion and understanding of the field.",
+  },
+  "Data Mining": {
+    description: "An 8-week NPTEL course by Prof. Pabitra Mitra (IIT Nagpur), covering data preprocessing, clustering, classification, and association rule mining. Earned Elite certification for mastering key data analysis techniques.",
+  },
+  "Software Testing": {
+    description: "A 4-week NPTEL course by Prof. Rajib Mall (IIT Kharagpur) covering software testing fundamentals, including black-box and white-box testing, integration, system, and regression testing. The course also introduces key tools and automation techniques essential for software reliability.",
+  },
+  "AWS Data Engineering - AICTE": {
+    description: "Completed a 10-week AICTE Virtual Internship in AWS Data Engineering, covering Cloud Computing Fundamentals and a dedicated Data Engineering module. Gained hands-on experience in cloud services, data pipelines, and scalable data processing on AWS. (AICTE - Cohort 7)",
+  },
+  "Google Generative AI - AICTE": {
+    description: "Completed Cohort 9 of the AICTE Virtual Internship in Google Generative AI—a 10-week program exploring Gemini AI, machine learning, and real-world applications using Google Cloud Platform for data science and web development.",
+  },
+  "Data Science Internship": {
+    description: "Completed a Data Science Internship at Prodigy Infotech, gaining hands-on experience in data cleaning, EDA, feature engineering, and predictive modeling using Python, SQL, Power BI, and Excel.",
+  },
+  "Innovation Event": {
+    description: "Participated in presenting innovative business ideas.",
+  },
+  "Trading Titans": {
+    description: "Participated in Trading Titans, part of the Ubertech Symposium, focused on stock market investment strategies.",
+  },
+  "SG Internal Hackathon": {
+    description: "Participated as a team of two in developing innovative solutions during the SG Internal Hackathon.",
+  },
+  "Cyber Security Workshop": {
+    description: "Completed a 14-day workshop on cybersecurity fundamentals and current digital threats.",
+  },
+  "ThermoElectric Mobile Charger Project": {
+    description: "Presented a ThermoElectric Mobile Charger project during Science Day on February 28th, 2023, honoring Sir C.V. Raman’s birthday. Showcased the innovative model to science department heads, gaining exposure to practical engineering and creative thinking.",
+    videoURL: "https://youtu.be/wniAkpQiZ6o?si=aFyndUOLTthOva0T",
+    videoLabel: "▶️ Science Day",
+    downloadURL: "assets/THERMOELECTRIC MOBILE CHARGER.pdf",
+    downloadLabel: "📄Project Reference"
+  },
+  "Community Connect Internship": {
+  description: "Volunteered for 16 days in June 2024 at Kaveri High School as part of a Community Connect program. Taught Science and Biology to 6th, 8th, and 9th-grade students, along with introductory Computer Science concepts. This experience strengthened my teaching skills and deepened my commitment to empowering students through education.",
+  videoURL: "https://drive.google.com/file/d/1Fw4cQ2ndgsD3D1S5ryqxvKN_0OSU87vm/view?usp=sharing",
+  videoLabel: "▶️ Community Connect Work (Watch at 1080p)",
+  downloadURL: "assets/Community Connect.pdf",
+  downloadLabel: "📄Activity Report"
+  }
+};
+const modal = document.getElementById('certModal');
+const modalTitle = document.getElementById('modalTitle');
+const modalImage = document.getElementById('modalImage');
+const modalDescription = document.getElementById('modalDescription');
+const closeBtn = document.querySelector('.close-btn');
+
+document.querySelectorAll('.cert-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const title = item.querySelector('.overlay').textContent.trim();
+    const imgSrc = item.querySelector('img').src;
+    modalTitle.textContent = title;
+    modalImage.src = imgSrc;
+    modalImage.alt = title;
+    modalDescription.textContent = certDetails[title]?.description || "No details available.";
+    modal.style.display = 'block';
+  });
+});
+
+closeBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+// Close modal if clicking outside content
+window.addEventListener('click', (e) => {
+  if (e.target == modal) {
+    modal.style.display = 'none';
+  }
+});
+
+</script>
+
+<script>
+  const skillsData = {
+    programming: ['Python', 'C', 'HTML','CSS','Javascript','SQL'],
+    tools: ['Streamlit', 'Google Colab', 'Power BI', 'MS Excel', 'VS Code', 'Orange', 'SQL Command Run'],
+    web: ['Communication', 'Leadership', 'Problem Solving', 'Team Work', 'Adaptability'],
+    ml: ['Tamil','English','Hindi','French']
+  };
+
+  function showSkills(category) {
+    const skillsDisplay = document.getElementById('skills-display');
+    const skills = skillsData[category];
+    skillsDisplay.innerHTML = skills.map(skill => `<span>${skill}</span>`).join('');
+  }
+
+  // Optionally show one by default
+  showSkills('programming');
+</script>
+
+<script>
+  const toggleBtn = document.getElementById('darkToggle');
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+  });
+</script>
+
+
+</body>
+</html>
